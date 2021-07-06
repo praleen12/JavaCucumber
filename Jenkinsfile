@@ -1,16 +1,23 @@
 pipeline {
     agent any
-
     stages {
-        stage('Hello') {
+        stage ('Compile Stage') {
+
             steps {
-                    echo 'Hello World'
+                withMaven(maven : 'apache-maven-3.6.1') {
+                    bat 'mvn clean compile'
+                }
             }
         }
-          stage('Success') {
+        stage ('Testing Stage') {
+
             steps {
-                    echo 'Success World'
+                withMaven(maven : 'apache-maven-3.6.1') {
+                    bat 'mvn verify'
+                }
             }
+        }
+
         }
     }
 }
