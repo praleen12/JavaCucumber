@@ -1,23 +1,30 @@
 pipeline {
-    agent any
+    	agent {
+    		node {
+    			lable 'master'
+    			 }
+    		  }	 
+    options {
+    	timestamps()
+   			}
+    
+  
     stages {
-        stage ('Compile Stage') {
+        stage('Get code') {
 
-            steps {
-                withMaven(maven : 'apache-maven-3.6.1') {
-                    bat 'mvn clean compile'
-                }
-            }
+		git 'https://github.com/praleen12/JavaCucumber.git'	
         }
-        stage ('Testing Stage') {
-
+        stage('Run tests') {
             steps {
-                withMaven(maven : 'apache-maven-3.6.1') {
-                    bat 'mvn verify'
-                }
+                sh 'mvn verify'
             }
-        }
-
         }
     }
+    post {
+        always {
+            cucumber '**/cucumber.json'
+        }
+    }
+  
+    	
 }

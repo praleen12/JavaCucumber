@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-06T12:39:53.970Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4430891000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStep.HooksDemoSteps.browserSetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login",
+        "description": "",
+        "id": "login-check-search;login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 503542000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStep.HooksDemoSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4596000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 113000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "User navigate to tyhe application url",
+            "match": {
+              "location": "hooksStep.HooksDemoSteps.user_navigate_to_tyhe_application_url()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 123000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1210000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 4825000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User enters the Raghav and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 27
+                }
+              ],
+              "location": "hooksStep.HooksDemoSteps.user_enters_the_Raghav_and(java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 93000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5174000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 57000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "hooksStep.HooksDemoSteps.user_clicks_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 65000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 838000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 51000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User is logged in",
+            "match": {
+              "location": "hooksStep.HooksDemoSteps.user_is_logged_in()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 64000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooksStep.HooksDemoSteps.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@leenatest"
+          }
+        ]
+      }
+    ],
+    "name": "Login check search",
+    "description": "",
+    "id": "login-check-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/hooksDemo.feature",
+    "tags": []
+  }
+]
