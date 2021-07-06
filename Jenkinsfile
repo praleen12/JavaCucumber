@@ -13,9 +13,18 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/praleen12/JavaCucumber.git'
             }
         }
-          stage ('Build') {
+          stage ('Test') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn clean test'
+            }
+        }
+        
+
+           stage ('Reporting') {
+            steps {
+                cucumber buildStatus: "UNSTABLE",
+                jsonReportDirectory: 'target'
+                
             }
         }
         
