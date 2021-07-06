@@ -6,7 +6,9 @@ pipeline {
      
         stage('Run tests') {
             steps {
+               script{
                 sh 'mvn verify'
+                }
                  }
                             }
     }
