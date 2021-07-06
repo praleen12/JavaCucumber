@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Get code') {
 
-		git 'https://github.com/praleen12/JavaCucumber.git'	
+		git 'https://github.com/praleen12/JavaCucumber'	
         }
         stage('Run tests') {
             steps {
@@ -13,11 +13,6 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            cucumber '**/cucumber.json'
-        }
-    }
-  
+ 
     	
 }
