@@ -1,14 +1,4 @@
 pipeline {
-    	agent {
-    		node {
-    			lable 'master'
-    			 }
-    		  }	 
-    options {
-    	timestamps()
-   			}
-    
-  
     stages {
         stage('Get code') {
 
