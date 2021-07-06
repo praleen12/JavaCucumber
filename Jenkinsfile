@@ -6,11 +6,11 @@ pipeline {
      
         stage('Run tests') {
             steps {
-               script{
-                sh 'mvn verify'
-                }
-                 }
-                            }
+				sh "mvn clean install"
+				
+                	}
+                			 }
+                            
     }
  
     	
