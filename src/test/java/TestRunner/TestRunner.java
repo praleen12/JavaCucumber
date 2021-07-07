@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 //, plugin = {"pretty", "html:target/HtmlReports"}
 //,plugin = {"pretty", "json:target/JSONReports/report.json"}
 //,plugin = { "pretty", "junit:target/junitReports/report.xml"}
-		, plugin = { "pretty", "json:target/JSONReports/report.json", "html:target/HtmlReports" }
+				, plugin = { "pretty", "json:target/JSONReports/cucumber.json", "html:target/HtmlReports" }
 
 		, tags = {"@leena or @docker"})
 
