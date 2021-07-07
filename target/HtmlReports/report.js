@@ -1,129 +1,40 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/hooksDemo.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/dockerExample.feature");
 formatter.feature({
-  "name": "Login check search",
-  "description": "",
+  "name": "Title of your feature",
+  "description": "  I want to use this template for my feature file",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Login",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@leenatest"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigate to tyhe application url",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "User enters the \u003cid\u003e and \u003cpassword\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "User clicks on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "User is logged in",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "id",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "Raghav",
-        "12345"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "Login",
+  "name": "Validate docker run on chromwe",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@leenatest"
+      "name": "@docker"
     }
   ]
 });
 formatter.before({
   "status": "passed"
 });
-formatter.beforestep({
+formatter.step({
+  "name": "Docker run Open Browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepDefinations.DockerExampleSteps.docker_run_Open_Browser()"
+});
+formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User navigate to tyhe application url",
+  "name": "Docker run user is on search page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "hooksStep.HooksDemoSteps.user_navigate_to_tyhe_application_url()"
+  "location": "stepDefinations.DockerExampleSteps.docker_run_user_is_on_search_p_age()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters the Raghav and 12345",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "hooksStep.HooksDemoSteps.user_enters_the_Raghav_and(java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "hooksStep.HooksDemoSteps.user_clicks_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is logged in",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "hooksStep.HooksDemoSteps.user_is_logged_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
   "status": "passed"
 });
 formatter.after({

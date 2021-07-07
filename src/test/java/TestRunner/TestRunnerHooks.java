@@ -5,16 +5,16 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "./src/test/resources/Features/hooksDemo.feature", glue = {
-		"hooksStep" }, monochrome = true
-//, plugin = {"pretty", "html:target/HtmlReports"}
-//,plugin = {"pretty", "json:target/JSONReports/report.json"}
-//,plugin = { "pretty", "junit:target/junitReports/report.xml"}
-		, plugin = { "pretty", "json:target/JSONReports/cucumber.json", "html:target/HtmlReports" }
+//@RunWith(Cucumber.class)
+//@CucumberOptions(features = "./src/test/resources/Features/hooksDemo.feature", glue = {
+//		"hooksStep" }, monochrome = true
+////, plugin = {"pretty", "html:target/HtmlReports"}
+////,plugin = {"pretty", "json:target/JSONReports/report.json"}
+////,plugin = { "pretty", "junit:target/junitReports/report.xml"}
+//		, plugin = { "pretty", "json:target/JSONReports/cucumber.json", "html:target/HtmlReports" }
+//
+//		, tags = {"@leenatest"})
 
-		, tags = {"@leenatest"})
-
-public class TestRunnerHooks {
-
-}
+//public class TestRunnerHooks {
+//
+//}

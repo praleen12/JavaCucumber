@@ -6,5 +6,4 @@ stepDefinations/LoginStepsDemo.class
 stepDefinations/LoginStepsPageFactory.class
 pages/loginPage.class
 stepDefinations/LoginSteps.class
-TestRunner/TestRunnerHooks.class
 PageFactory/LoginPageFactory.class

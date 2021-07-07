@@ -50,10 +50,10 @@ public class HooksDemoSteps {
 	}
 	
 
-	@Given("User navigate to tyhe application url")
-	public void user_navigate_to_tyhe_application_url() {
-
-	}
+//	@Given("User navigate to tyhe application url")
+//	public void user_navigate_to_tyhe_application_url() {
+//
+//	}
 
 	@Given("User enters the Raghav and {int}")
 	public void user_enters_the_Raghav_and(Integer int1) {
@@ -74,6 +74,9 @@ public class HooksDemoSteps {
 	public void user_enters_the_Leena_and(Integer int1) {
 
 	}
+	
+	
+	
 
 
 

@@ -156,6 +156,19 @@ Step 6 : Check report generated
 2. Right click project and Maven test run
 3. In cmd, run mvn test, it will run all testRunner class files
 
+---------CICD pipeline 2 ways---------
+1. Add free style project in Jenkins and link repo from Git hub
+2. Add Jenkinsfile and link in pipeline job in Jenkins
+3. For add cucumber plugins in Manage Jenkins
+cucumber - free style project
+
+----Docker standalone run --------
+
+----Docker hub/node run----------
+1. Create docker compose file
+2. run compose file from cmdline  docker-cmpose up
+3. http://localhost:4444/grid/console has two browsers FF and chrome running in parallel
+
 
 
 
