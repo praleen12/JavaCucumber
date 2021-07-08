@@ -12,6 +12,7 @@ hs_err_pid*
 ## Maven
 ##############################
 /target/
+target/
 */target/**
 /.class
 pom.xml.tag
