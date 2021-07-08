@@ -3,11 +3,13 @@ Step 1 - Create a new maven project
 Step 2 - Add maven dependencies Cucumber Java | Cucumber JUnit | JUnit | Selenium Java
 Step 3 - Create a folder Features under src/test/resources
 Step 4 - Under features folder create a new feature file login.feature
-Step 5 - Download cucumber plugin from Eclipse Marketplace
+Step 5 - Download cucumber plugin from Eclipse Marketplace if needed
 Step 6 - Create feature file and add contents, Feature, Scenario, Steps, Scenario Outline, Example, Tags, Comments
-Step 7 - Try to run the feature file
+Step 7 - Try to run the feature file indivisually snippet will be created to paste in steps
 Step 8 - Add Step Definitions / Glue Code under src/test/java package
-Step 9 - Create a Runner class
+Step 9 - Create a Runner class if need to run multiple feature files
+
+with above, all frk will be running without selenium code
 
 ------------ add selenium webdriver code --------------
 
@@ -18,7 +20,7 @@ Step 4 - Download browser driver files
 Step 5 - Add Selenium WebDriver code
 Step 6 - Run Feature file and check the execution
 
--------------add seleniu webdriver navigation code
+-------------add selenium web driver navigation code
 
 Step 1 - Check the scenario/navigation
 Step 2 - Create a feature file and add Scenario and Steps
@@ -36,7 +38,7 @@ Step 5 - Add data for the parameters in the Examples section
 Step 6 - Update step definition to get values from feature file Examples section
 Step 7 - Run and verify
 
--------------- POM model --------------
+-------------- POM model -----------------------
 
 Step 1 - Create a class for each page
 Step 2 - Create locators of all objects to be used in that page
@@ -58,7 +60,7 @@ public LoginPage_PF(WebDriver driver) {
 Step 5 - Update Test Scripts to refer methods from PageFactory class
 Step 6 - Run and validate
 
---------------- Taggings-----------------
+--------------- Taggings-----------------------
 
 Step 1 - Create a new or use an existing Feature File
 Step 2 - Mark the feature and scenarios with Tags : @TagName
@@ -160,14 +162,17 @@ Step 6 : Check report generated
 1. Add free style project in Jenkins and link repo from Git hub
 2. Add Jenkinsfile and link in pipeline job in Jenkins
 3. For add cucumber plugins in Manage Jenkins
-cucumber - free style project
 
-----Docker standalone run --------
+-------Two way of running------
+1. Using chrome driver placed in local dir or folder structure
+2. Using Docker container
 
-----Docker hub/node run----------
-1. Create docker compose file
-2. run compose file from cmdline  docker-cmpose up
-3. http://localhost:4444/grid/console has two browsers FF and chrome running in parallel
+------By using docker container-----
+1. Download the selenium/standalone-chrome into local repo
+2. create the container and run the image with cmd docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
+3. Run the scripts
+
+
 
 
 
